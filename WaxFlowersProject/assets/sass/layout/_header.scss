@@ -1,0 +1,47 @@
+
+.header{
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    z-index: 3;
+    background-color: $main-color;
+    color: $white;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    &__inner{
+        @include flexbox(space-between);
+    }
+    &__navbar{
+        @include flexbox();
+    }
+    &__logo-text{
+        color: $white;
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin-right: 4rem;
+    }
+    &__list{
+        @include flexbox();
+    }
+    &__list-item{
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+    &__item-link{
+        color: $white;
+    }
+    &__user{
+        @include flexbox();
+    }
+    &__user-item{
+        @include flexbox();
+        color: $white;
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+    &__icon{
+        margin-right: 0.5rem;
+    }
+}
